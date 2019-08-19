@@ -8,7 +8,8 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "82fc21ac-152f-4be9-8520-738a6588595b"
+          "82fc21ac-152f-4be9-8520-738a6588595b",
+          "b1efda85-b388-4bdc-961d-b8fc3c9d7e1f"
         ],
         "isRemovable": false,
         "filePath": "hiru1908_Merge002"
@@ -31,14 +32,38 @@
           "layers": []
         },
         "triggers": []
+      },
+      "b1efda85-b388-4bdc-961d-b8fc3c9d7e1f": {
+        "id": "b1efda85-b388-4bdc-961d-b8fc3c9d7e1f",
+        "parent": "623e0f44-b89d-4096-ade6-3fcda2a4d552",
+        "name": "hiru",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "74989023-2a0a-4954-afa2-4976262d0789"
+        ],
+        "isRemovable": true,
+        "filePath": "hiru1908_Merge002/hiru"
+      },
+      "74989023-2a0a-4954-afa2-4976262d0789": {
+        "id": "74989023-2a0a-4954-afa2-4976262d0789",
+        "parent": "b1efda85-b388-4bdc-961d-b8fc3c9d7e1f",
+        "name": "sample.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1908_Merge002/hiru/sample.js",
+        "code": ""
       }
     },
     "deletedFiles": [],
     "rootNode": "623e0f44-b89d-4096-ade6-3fcda2a4d552",
     "openFiles": [
-      "82fc21ac-152f-4be9-8520-738a6588595b"
+      "82fc21ac-152f-4be9-8520-738a6588595b",
+      "74989023-2a0a-4954-afa2-4976262d0789"
     ],
-    "currentFileId": "82fc21ac-152f-4be9-8520-738a6588595b",
+    "currentFileId": "74989023-2a0a-4954-afa2-4976262d0789",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -65,7 +90,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1566207778597
+    "lastSave": 1566208199941
   },
   "VCS_STATE": {
     "provider": "GitHub",
