@@ -9,6 +9,7 @@
         "isDirectory": true,
         "children": [
           "82fc21ac-152f-4be9-8520-738a6588595b",
+          "c7513424-1797-4350-b1f1-8cd047896c1f",
           "b1efda85-b388-4bdc-961d-b8fc3c9d7e1f"
         ],
         "isRemovable": false,
@@ -32,6 +33,49 @@
           "layers": []
         },
         "triggers": []
+      },
+      "c7513424-1797-4350-b1f1-8cd047896c1f": {
+        "id": "c7513424-1797-4350-b1f1-8cd047896c1f",
+        "parent": "623e0f44-b89d-4096-ade6-3fcda2a4d552",
+        "name": "ksub",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "ae580c65-42a7-4ee9-aafd-f1c370f61462",
+          "4bde9845-59f9-428d-8373-2a3edc80b63d"
+        ],
+        "isRemovable": true,
+        "filePath": "hiru1908_Merge002/ksub"
+      },
+      "ae580c65-42a7-4ee9-aafd-f1c370f61462": {
+        "id": "ae580c65-42a7-4ee9-aafd-f1c370f61462",
+        "parent": "c7513424-1797-4350-b1f1-8cd047896c1f",
+        "name": "kpy.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1908_Merge002/ksub/kpy.py",
+        "code": "def handler(event, context):\n    \n    return {\"message\": \"Successfully executed\"}\n",
+        "config": {
+          "runtime": "python3.6",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "4bde9845-59f9-428d-8373-2a3edc80b63d": {
+        "id": "4bde9845-59f9-428d-8373-2a3edc80b63d",
+        "parent": "c7513424-1797-4350-b1f1-8cd047896c1f",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1908_Merge002/ksub/__init__.py",
+        "code": ""
       },
       "b1efda85-b388-4bdc-961d-b8fc3c9d7e1f": {
         "id": "b1efda85-b388-4bdc-961d-b8fc3c9d7e1f",
@@ -61,9 +105,9 @@
     "rootNode": "623e0f44-b89d-4096-ade6-3fcda2a4d552",
     "openFiles": [
       "82fc21ac-152f-4be9-8520-738a6588595b",
-      "74989023-2a0a-4954-afa2-4976262d0789"
+      "ae580c65-42a7-4ee9-aafd-f1c370f61462"
     ],
-    "currentFileId": "74989023-2a0a-4954-afa2-4976262d0789",
+    "currentFileId": "ae580c65-42a7-4ee9-aafd-f1c370f61462",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -77,6 +121,14 @@
         "shouldPersist": false,
         "displayOnly": false,
         "editable": false
+      },
+      {
+        "lambdaId": "ae580c65-42a7-4ee9-aafd-f1c370f61462",
+        "varKey": "PYTHONPATH",
+        "varValue": "/var/runtime:/var/task/hiru1908_Merge002/ksub",
+        "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
       }
     ],
     "packageJSON": {
@@ -90,7 +142,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1566208545807
+    "lastSave": 1566208644816
   },
   "VCS_STATE": {
     "provider": "GitHub",
